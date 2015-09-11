@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.0"/>
 
 
-    <meta name="description" content="Mr.Zhang's blog | java | android | lua" />
+    <meta name="description" content="java | android | lua" />
 
 
 
@@ -64,6 +64,14 @@
       </li>
     
       
+      <li class="menu-item menu-item-categories">
+        <a href="/categories">
+          <i class="menu-item-icon icon-categories"></i> <br />
+          分类
+        </a>
+      </li>
+    
+      
       <li class="menu-item menu-item-archives">
         <a href="/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
@@ -76,6 +84,14 @@
         <a href="/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
           标签
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-about">
+        <a href="/about">
+          <i class="menu-item-icon icon-about"></i> <br />
+          关于
         </a>
       </li>
     
@@ -236,7 +252,7 @@
         <img class="site-author-image" src="/uploads/avatar.jpg" alt="Zhang Renjie" />
         <p class="site-author-name">Zhang Renjie</p>
       </div>
-      <p class="site-description motion-element">Mr.Zhang's blog | java | android | lua</p>
+      <p class="site-description motion-element">java | android | lua</p>
       <div class="site-state motion-element">
         <div class="site-state-item site-state-posts">
           <span class="site-state-item-count">2</span>
@@ -313,7 +329,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 
@@ -422,6 +438,9 @@
       $.Velocity.RunSequence([
         { e: $('.brand'), p: { opacity: 1 }, o: { duration: 100 } },
         { e: $('.logo'), p: { opacity: 1, top: 0 }, o: { duration: 50} },
+        
+        { e: $('.logo-line-before i'), p: { translateX: "100%" }, o: { duration: 500, sequenceQueue: false } },
+        { e: $('.logo-line-after i'), p: { translateX: "-100%" }, o: { duration: 500, sequenceQueue: false } },
         
         { e: $('.site-title'), p: { opacity: 1, top: 0 }, o: { duration: 200 } }
       ]);
